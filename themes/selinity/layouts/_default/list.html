@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+
+
+
+{{ .Content }}
+
+{{ range.Data.Pages }}
+<article class="post-snippet">
+  <h3>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </h3>
+</article>
+{{ end }}
+
+
+
+
+{{ end }}

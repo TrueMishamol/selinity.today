@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Selinity</title>
+    <link>http://xn--80aqdngrh1dvc.xn--p1acf/</link>
+    <description>Recent content on Selinity</description>
+    <generator>Hugo</generator>
+    <language>ru-RU</language>
+    <lastBuildDate>Thu, 06 Feb 2025 08:42:11 +0300</lastBuildDate>
+    <atom:link href="http://xn--80aqdngrh1dvc.xn--p1acf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux</title>
+      <link>http://xn--80aqdngrh1dvc.xn--p1acf/%D0%BB%D0%B8%D0%BD%D1%83%D0%BA%D1%81/</link>
+      <pubDate>Thu, 06 Feb 2025 08:42:11 +0300</pubDate>
+      <guid>http://xn--80aqdngrh1dvc.xn--p1acf/%D0%BB%D0%B8%D0%BD%D1%83%D0%BA%D1%81/</guid>
+      <description>&lt;p&gt;В данном руководстве по установке и настройке операционной системы Linux мы рассмотрим&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Установка Debian&lt;/li&gt;&#xA;&lt;li&gt;Настройка системы&lt;/li&gt;&#xA;&lt;li&gt;Установка программ&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;div class=&#34;heading_admin&#34;&gt;&#xA;&#x9;&lt;div&gt;&#xA;&#x9;&#x9;&lt;h1&gt;&#xA;&#x9;&#x9;&#x9;Установка Debian&#xA;&#x9;&#x9;&lt;/h1&gt;&#xA;&#x9;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;    &lt;h2&gt;Balena Etcher&lt;/h2&gt;&#xA;&#xA;&lt;p&gt;Скачайте &lt;a href=&#34;https://etcher.balena.io&#34; title=&#34;&#34;&gt;Balena Etcher&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img class=&#34;markdown_image&#34; src=&#34;../linux/20250126112126.png&#34; alt=&#34;Pasted image&#34; title=&#34;&#34; /&gt;&#xA;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;Запустите установщик&lt;/p&gt;&#xA;&lt;p&gt;Скачайте образ &lt;a href=&#34;https://www.debian.org&#34; title=&#34;&#34;&gt;Debian&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img class=&#34;markdown_image&#34; src=&#34;../linux/20250126112229.png&#34; alt=&#34;Pasted image&#34; title=&#34;&#34; /&gt;&#xA;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;Загрузите на флешку через Balena Etcher&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Выберите опцию &lt;code&gt;Flash from file&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Выберите образ Debian&lt;/li&gt;&#xA;&lt;li&gt;Нажмите &lt;code&gt;Select target&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Выберите флешку&lt;/li&gt;&#xA;&lt;li&gt;Нажмите &lt;code&gt;Flash!&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;После окончания загрузки образа на флешку - выключите свой компьютер. Запустите установочную флешку через компьютер через BIOS. Способ выхода в BIOS отличается для каждого компьютера, в зависимости от материнской платы&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

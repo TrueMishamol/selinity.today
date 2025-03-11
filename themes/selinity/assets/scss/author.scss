@@ -1,0 +1,52 @@
+.author {
+	// display: inline-block;
+
+	background-color: $white;
+	// color: $purple-dark;
+
+	padding: 0 var(--px64px) 0 var(--px50px);
+	width: fit-content;
+	margin: var(--px-150px) auto 0;
+	// border: none;
+	border-radius: var(--px50px);
+
+	height: var(--px185px);
+
+	// // font-size: var(--px75px);
+	// text-align: center;
+	// text-decoration: none;
+	// white-space: nowrap;
+
+
+	display: flex;
+	// align-items:;
+	gap: var(--px50px);
+
+
+	&_avatar {
+		align-self: end;
+		padding-bottom: var(--px16px);
+		margin: 0 var(--px-55px);
+
+		img {
+			height: var(--px256px);
+		}
+	}
+
+	&_text {
+		align-self: center;
+		padding-bottom: var(--px16px);
+
+		text-align: center;
+
+		h4 {
+			font-size: var(--px75px);
+			color: $purple-pastel;
+		}
+
+		p {
+			font-size: var(--px55px);
+			color: $purple-dark;
+		}
+	}
+}

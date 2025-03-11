@@ -1,0 +1,122 @@
+.markdown {
+
+	/// Content Gap
+	display: flex;
+	flex-direction: column;
+	gap: var(--px32px);
+
+	>pre {
+		padding: var(--px32px) var(--px64px);
+		margin: 0 var(--px64px);
+		background-color: $purple-pastel;
+		color: $white;
+		border-radius: var(--px50px);
+
+		/// Word Wrap
+		white-space: pre-wrap;
+		/* CSS3 */
+		white-space: -moz-pre-wrap;
+		/* Mozilla, с 1999 года */
+		white-space: -pre-wrap;
+		/* Opera 4-6 */
+		white-space: -o-pre-wrap;
+		/* Opera 7 */
+		word-wrap: break-word;
+		/* Internet Explorer 5.5+ */
+	}
+
+	p>code {
+		padding: var(--px2px) var(--px16px) var(--px4px);
+		background-color: $purple-pastel;
+		color: $white;
+		border-radius: var(--px50px);
+
+	}
+
+	>hr {
+		margin: var(--px32px);
+	}
+
+	>h2 {
+		display: block;
+		text-align: center;
+	}
+
+	&_paragraph {
+
+		padding: var(--px32px) var(--px100px);
+		background-color: $white;
+		color: $purple-black;
+
+		li {
+			list-style: disc;
+		}
+
+		>p,
+		>ol,
+		>ul {
+			padding: var(--px16px) 0;
+			background-color: $white;
+			color: $purple-black;
+
+			>a {
+				color: $links-color;
+			}
+		}
+
+		>h3 {
+			padding: 0 var(--px64px) var(--px16px);
+			text-align: center;
+		}
+
+		>a {
+			color: $links-color;
+		}
+	}
+
+	&_image {
+		// margin: var(--px32px);
+
+		width: 100%;
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	&_paragraph {
+		background-color: $white;
+
+		p {
+			color: $purple-black;
+		}
+	}
+}
+
+
+
+.heading_admin {
+	width: 100%;
+
+	background-image: url('/images/pattern.svg');
+	background-size: var(--px1024px);
+	background-position: top;
+	background-repeat: repeat;
+
+	display: flex;
+	// justify-content: center;
+	// align-items: center;
+
+	>div {
+		background-color: $purple-black;
+		width: 100%;
+
+		margin: var(--px64px) 0;
+
+		h1 {
+			font-size: var(--px100px);
+			line-height: var(--px75px);
+	
+			text-align: center;
+			margin: var(--px4px) 0 var(--px16px);
+		}
+	}
+}

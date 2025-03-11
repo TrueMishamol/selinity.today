@@ -1,0 +1,5 @@
+{{ if .IsOrdered }}
+<ol>{{ .Inner }}</ol>
+{{ else }}
+<ul>{{ .Inner }}</ul>
+{{ end }}

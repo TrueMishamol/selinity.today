@@ -1,0 +1,194 @@
+:root {
+	--px1px: 1px;
+
+	--px-2px: -2px;
+	--px2px: 2px;
+
+	--px-4px: -4px;
+	--px4px: 4px;
+
+	--px-8px: -8px;
+	--px8px: 8px;
+
+	// --px12px: 12px; // Buttons
+
+	--px-16px: -16px;
+	--px16px: 16px;
+
+	--px-32px: -32px;
+	--px32px: 32px;
+
+	// --px40px: 40px; // Buttons
+
+	--px-50px: -50px;
+	--px50px: 50px;
+
+	--px-55px: -55px;
+	--px55px: 55px;
+
+	// --px56px: 56px; // Logo
+
+	--px-64px: -64px;
+	--px64px: 64px;
+
+	--px-75px: -75px;
+	--px75px: 75px;
+
+	--px-100px: -100px;
+	--px100px: 100px;
+
+	--px-128px: -128px;
+	--px128px: 128px;
+
+	--px-150px: -150px;
+	--px150px: 150px;
+
+	--px-185px: -185px;
+	--px185px: 185px;
+
+	--px-212px: -212px;
+	--px212px: 212px;
+
+	--px-256px: -256px;
+	--px256px: 256px;
+
+	// --px424px: 424px;
+
+	--px-512px: -512px;
+	--px512px: 512px;
+
+	--px-720px: -720px;
+	--px720px: 720px;
+}
+
+// vw = px / 720 * 100
+@media (max-width: 720px) {
+	:root {
+		--px1px: 0.139vw;
+
+		--px-2px: -0.278vw;
+		--px2px: 0.278vw;
+
+		--px-4px: -0.556vw
+		--px4px: 0.556vw
+
+		--px-8px: -1.112vw;
+		--px8px: 1.112vw;
+
+		// --px12px: 1.668vw; // Buttons
+
+		--px-16px: -2.224vw;
+		--px16px: 2.224vw;
+
+		--px-32px: -4.448vw;
+		--px32px: 4.448vw;
+
+		// --px40px: 5.56vw; // Buttons
+
+		--px-50px: -6.95vw;
+		--px50px: 6.95vw;
+
+		--px-55px: -7.639vw;
+		--px55px: 7.639vw;
+
+		// --px56px: 7.784vw; // Logo
+
+		--px-64px: -8.896vw;
+		--px64px: 8.896vw;
+
+		--px-75px: -10.417vw;
+		--px75px: 10.417vw;
+
+		--px-100px: -13.9vw;
+		--px100px: 13.9vw;
+
+		--px-128px: -17.792vw;
+		--px128px: 17.792vw;
+
+		--px-150px: -20.833vw;
+		--px150px: 20.833vw;
+
+		--px-185px: -25.694vw;
+		--px185px: 25.694vw;
+
+		--px-212px: -29.468vw;
+		--px212px: 29.468vw;
+
+		--px-256px: -35.584vw;
+		--px256px: 35.584vw;
+
+		// --px424px: 58.936vw;
+
+		--px-512px: -71.111vw;
+		--px512px: 71.111vw;
+
+		--px-720px: -100vw;
+		--px720px: 100vw;
+	}
+}
+
+// vw = px / 1500 * 100
+@media (min-width: 1500px) {
+	:root {
+		--px1px: 0.067vw;
+
+		--px-2px: 0.134vw;
+		--px2px: 0.134vw;
+
+		--px-4px: 0.267vw;
+		--px4px: 0.267vw;
+
+		--px-8px: -0.536vw;
+		--px8px: 0.536vw;
+
+		// --px12px: 0.804vw; // Buttons
+
+		--px-16px: -1.072vw;
+		--px16px: 1.072vw;
+
+		--px-32px: -2.144vw;
+		--px32px: 2.144vw;
+
+		// --px40px: 2.68vw; // Buttons
+
+		--px-50px: -3.35vw;
+		--px50px: 3.35vw;
+
+		--px-55px: -3.667vw;
+		--px55px: 3.667vw;
+
+		// --px56px: 3.752vw; // Logo
+
+		--px-64px: -4.288vw;
+		--px64px: 4.288vw;
+
+		--px-75px: -5vw;
+		--px75px: 5vw;
+
+		--px-100px: -6.7vw;
+		--px100px: 6.7vw;
+
+		--px-128px: -8.576vw;
+		--px128px: 8.576vw;
+
+		--px-150px: -10vw;
+		--px150px: 10vw;
+
+		--px-185px: -12.333vw;
+		--px185px: 12.333vw;
+
+		--px-212px: -14.204vw;
+		--px212px: 14.204vw;
+
+		--px-256px: -17.152vw;
+		--px256px: 17.152vw;
+
+		// --px424px: 28.408vw;
+
+		--px-512px: -34.133vw;
+		--px512px: 34.133vw;
+
+		--px-720px: -48.24vw;
+		--px720px: 48.24vw;
+	}
+}

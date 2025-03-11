@@ -1,0 +1,43 @@
+@font-face {
+	font-family: 'MishamolPuffedBun2-Regular';
+	src: url('/fonts/MishamolPuffedBun2-Regular.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: 'MishamolPuffedBun2-Regular', sans-serif;
+	// font-size: var(--px16px);
+	color: $white;
+
+	font-size: var(--px32px);
+}
+
+::selection {
+	background: $text-selection;
+	color: $white;
+}
+
+h1 {
+	font-size: var(--px64px);
+}
+
+h2 {
+	font-size: var(--px64px);
+	// line-height: 60%;
+}
+
+h3 {
+	font-size: var(--px50px);
+}
+
+p {
+	// line-height: 90%;
+	font-size: var(--px32px);
+}
+
+code {
+	//! Change font-family in the future
+	font-size: var(--px32px);
+	font-family: 'MishamolPuffedBun2-Regular', sans-serif;
+}

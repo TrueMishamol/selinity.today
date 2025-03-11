@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+
+
+
+
+<div class="markdown">
+
+	{{ if not .Params.no_author }}
+		{{ partial "author.html" . }}
+	{{ end }}
+
+	{{ .Content }}
+
+</div>
+
+
+
+
+
+{{ end }}

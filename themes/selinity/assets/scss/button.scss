@@ -1,0 +1,46 @@
+.button {
+	display: inline-block;
+
+	background-color: $white;
+	color: $purple-dark;
+
+	padding: var(--px8px) var(--px128px) var(--px16px);
+	border: none;
+	border-radius: var(--px64px);
+
+	cursor: pointer;
+
+	font-size: var(--px75px);
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+
+	transition: transform 0.3s ease-in-out;
+
+	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	// &:focus {
+	//     outline: none;
+	//     color: $purple-dark;
+	// }
+
+	&:visited {
+		outline: none;
+		color: $purple-dark;
+	}
+
+	&:hover {
+		transform: scale(1.1);
+		background-color: $purple-dark;
+		color: $white;
+	}
+
+	&:active {
+		background-color: $purple-dark;
+		color: $white;
+	}
+
+}

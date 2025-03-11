@@ -1,0 +1,40 @@
+// Marquee
+@keyframes scroll {
+	0% {
+		transform: translateX(0%); /* Начальная позиция справа */
+	}
+
+	100% {
+		transform: translateX(-100%); /* Конечная позиция слева */
+	}
+}
+
+.marquee {
+	display: flex;
+	width: 100%;
+
+	&_group,
+	&_duplicate {
+		animation: scroll 50s infinite linear;
+
+		height: fit-content;
+		min-width: fit-content;
+
+		display: flex;
+
+		>* {
+			margin-left: var(--px32px); //^ Space between elements
+
+			img {
+				width: var(--px256px);
+				height: var(--px256px);
+				user-select: none;
+
+				transition: transform 0.3s ease-in-out;
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+}

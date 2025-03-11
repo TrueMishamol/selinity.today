@@ -1,0 +1,26 @@
+
+::-webkit-scrollbar {
+	transition: transform 0.3s ease-in-out;
+	width: var(--px8px); /* Ширина полосы прокрутки */
+  }
+  
+  ::-webkit-scrollbar-track {
+	background: #ffffff00; /* Цвет фона трека */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+	background: $white; /* Цвет бегунка */
+	border-radius: var(--px4px); /* Скругление углов бегунка */
+	border: none;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+	background: $purple-pastel; /* Цвет бегунка при наведении */
+	
+  }
+  
+  /* Для Firefox */
+  body {
+	scrollbar-width: thin; /* auto | thin | none */
+	scrollbar-color: $white $purple-pastel; /* цвет бегунка и трека */
+  }

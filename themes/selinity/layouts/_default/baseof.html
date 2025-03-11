@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+
+<head>
+	{{ partial "head.html" . }}
+</head>
+
+<body>
+	<div class="body_container">
+		<div class="gap">
+
+			<header class="header">
+				{{ partial "header.html" . }}
+			</header>
+
+			<main class="gap" id="scrollTarget">
+				{{ block "main" . }}{{ end }}
+			</main>
+
+			{{ if not .Params.no_footer }}
+				{{ partial "footer.html" . }}
+		  	{{ end }}
+			
+		</div>
+	</div>
+
+	<!--^ JS ^-->
+	{{ $js := resources.Match "js/*.js" }}
+	{{ $js := $js | resources.Concat "bundle.js" | js.Build }}
+	<script src="{{ $js.RelPermalink }}" defer></script>
+
+</body>
+
+</html>

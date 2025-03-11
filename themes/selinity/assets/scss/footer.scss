@@ -1,0 +1,77 @@
+.footer {
+
+	display: flex;
+	flex-direction: column;
+	gap: var(--px50px);
+
+	// margin: var(--px256px) 0 var(--px32px);
+	margin-bottom: var(--px32px);
+
+	>* {
+		// margin: var(--px50px) 0;
+	}
+
+	&_contacts {
+		// height: var(--px256px);
+
+		// background-image: url('/images/header-background.png');
+		// background-size: cover;
+		// background-position: center;
+		// background-repeat: no-repeat;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	&_divider {
+		height: var(--px55px);
+		background-image: url('/images/pattern.svg');
+	}
+
+	&_text {
+		padding: 0 var(--px50px);
+
+		p {
+			color: $white;
+		}
+	}
+
+	&_links {
+		padding: 0 var(--px50px);
+
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 10px;
+
+		@media (max-width: 850px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@media (min-width: 1200px) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+
+
+		a {
+			color: $purple_pastel;
+		}
+	}
+
+	&_logo {
+		color: $white;
+
+		// align-items: center;
+		text-align: center;
+
+		p {
+			font-size: var(--px55px);
+		}
+
+		img {
+			height: var(--px64px);
+			margin-bottom: var(--px8px);
+		}
+	}
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+<head>
+	{{ partial "head.html" . }}
+</head>
+
+<body>
+	<div class="body_container">
+		<div class="gap">
+
+
+			<header class="header_index">
+
+				<h1> Selinity </h1>
+				<h3 id="randomHeader">
+					Моды, которые не надо скачивать.
+				</h3>
+				<a class="button" id="scrollButton">Начать</a>
+
+			</header>
+
+
+
+
+			<main class="gap" id="scrollTarget">
+
+
+				<div class="heading_admin">
+					<div>
+						<h1>
+							Адекватный админ!
+						</h1>
+					</div>
+				</div>
+
+
+				<div class="marquee">
+					<div class="marquee_group">
+						<a>
+							<img src="/images/checauwa-round/checauwa-round-01.png" alt="Checauwa">
+						</a>
+						<a>
+							<img src="/images/checauwa-round/checauwa-round-02.png" alt="Checauwa">
+						</a>
+						<a>
+							<img src="/images/checauwa-round/checauwa-round-03.png" alt="Checauwa">
+						</a>
+						<a>
+							<img src="/images/checauwa-round/checauwa-round-04.png" alt="Checauwa">
+						</a>
+						<a>
+							<img src="/images/checauwa-round/checauwa-round-01.png" alt="Checauwa">
+						</a>
+						<a>
+							<img src="/images/checauwa-round/checauwa-round-02.png" alt="Checauwa">
+						</a>
+						<a>
+							<img src="/images/checauwa-round/checauwa-round-03.png" alt="Checauwa">
+						</a>
+						<a>
+							<img src="/images/checauwa-round/checauwa-round-04.png" alt="Checauwa">
+						</a>
+					</div>
+					<div class="marquee_duplicate">
+						<a>
+							<img src="/images/checauwa-round/checauwa-round-01.png" alt="Checauwa">
+						</a>
+						<a>
+							<img src="/images/checauwa-round/checauwa-round-02.png" alt="Checauwa">
+						</a>
+						<a>
+							<img src="/images/checauwa-round/checauwa-round-03.png" alt="Checauwa">
+						</a>
+						<a>
+							<img src="/images/checauwa-round/checauwa-round-04.png" alt="Checauwa">
+						</a>
+						<a>
+							<img src="/images/checauwa-round/checauwa-round-01.png" alt="Checauwa">
+						</a>
+						<a>
+							<img src="/images/checauwa-round/checauwa-round-02.png" alt="Checauwa">
+						</a>
+						<a>
+							<img src="/images/checauwa-round/checauwa-round-03.png" alt="Checauwa">
+						</a>
+						<a>
+							<img src="/images/checauwa-round/checauwa-round-04.png" alt="Checauwa">
+						</a>
+					</div>
+				</div>
+
+
+			</main>
+
+
+
+
+			{{ partial "footer.html" . }}
+
+		</div>
+	</div>
+
+	<!--^ JS ^-->
+	{{ $js := resources.Match "js/*.js" }}
+	{{ $js := $js | resources.Concat "bundle.js" | js.Build }}
+	<script src="{{ $js.RelPermalink }}" defer></script>
+
+</body>
+
+</html>

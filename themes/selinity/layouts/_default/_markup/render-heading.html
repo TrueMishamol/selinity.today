@@ -1,0 +1,11 @@
+{{ if eq .Level 1 }}
+<div class="heading_admin">
+	<div>
+		<h1>
+			{{ .Text }}
+		</h1>
+	</div>
+</div>
+{{ else }}
+    <h{{ .Level }}>{{ .Text }}</h{{ .Level }}>
+{{ end }}

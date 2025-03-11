@@ -1,0 +1,28 @@
+body {
+	background-color: $purple-black;
+	margin: 0;
+	padding: 0;
+
+	max-width: 100%;
+}
+
+img {
+	image-rendering: pixelated;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: crisp-edges;
+
+	-webkit-user-drag: none;
+	user-drag: none;
+	
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.body_container {
+	width: 100%;
+	max-width: 100%;
+	height: fit-content;
+	overflow: hidden;
+}
