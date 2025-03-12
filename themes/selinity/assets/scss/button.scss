@@ -2,7 +2,7 @@
 	display: inline-block;
 
 	background-color: $white;
-	color: $purple-dark;
+	color: $purple_dark;
 
 	padding: var(--px8px) var(--px128px) var(--px16px);
 	border: none;
@@ -24,22 +24,22 @@
 
 	// &:focus {
 	//     outline: none;
-	//     color: $purple-dark;
+	//     color: $purple_dark;
 	// }
 
 	&:visited {
 		outline: none;
-		color: $purple-dark;
+		color: $purple_dark;
 	}
 
 	&:hover {
 		transform: scale(1.1);
-		background-color: $purple-dark;
+		background-color: $purple_dark;
 		color: $white;
 	}
 
 	&:active {
-		background-color: $purple-dark;
+		background-color: $purple_dark;
 		color: $white;
 	}
 

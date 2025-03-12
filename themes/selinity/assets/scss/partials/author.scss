@@ -2,7 +2,7 @@
 	// display: inline-block;
 
 	background-color: $white;
-	// color: $purple-dark;
+	// color: $purple_dark;
 
 	padding: 0 var(--px64px) 0 var(--px50px);
 	width: fit-content;
@@ -26,7 +26,7 @@
 	&_avatar {
 		align-self: end;
 		padding-bottom: var(--px16px);
-		margin: 0 var(--px-55px);
+		margin: 0 var(--px-64px);
 
 		img {
 			height: var(--px256px);
@@ -41,12 +41,12 @@
 
 		h4 {
 			font-size: var(--px75px);
-			color: $purple-pastel;
+			color: $purple_pastel;
 		}
 
 		p {
 			font-size: var(--px55px);
-			color: $purple-dark;
+			color: $purple_dark;
 		}
 	}
 }

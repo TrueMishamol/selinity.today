@@ -28,7 +28,7 @@
 
 		padding-left: var(--px16px);
 		padding-right: var(--px50px);
-		background: $purple-pastel;
+		background: $purple_pastel;
 		border-radius: 0 var(--px100px) var(--px100px) 0;
 
 		display: flex;
@@ -51,7 +51,7 @@
 		}
 
 		&:hover {
-			background-color: $purple-dark;
+			background-color: $purple_dark;
 		}
 	}
 
@@ -62,7 +62,7 @@
 		height: var(--px64px);
 		padding: 0 var(--px64px);
 
-		background-color: $purple-pastel;
+		background-color: $purple_pastel;
 		color: $white;
 
 
@@ -72,12 +72,12 @@
 		}
 	
 		&:hover {
-			background-color: $purple-dark;
+			background-color: $purple_dark;
 			color: $white;
 		}
 	
 		&:active {
-			background-color: $purple-dark;
+			background-color: $purple_dark;
 			color: $white;
 		}
 	}
@@ -145,13 +145,13 @@
 			margin: 0 auto;
 			border-radius: var(--px8px);
 			text-align: center;
-			background-color: $purple-pastel;
+			background-color: $purple_pastel;
 		}
 
 		&_title {
 			line-height: 70%;
 			text-align: center;
-			color: $purple-pastel;
+			color: $purple_pastel;
 			font-size: var(--px55px);
 		}
 

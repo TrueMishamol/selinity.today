@@ -1,5 +1,6 @@
 ---
 title: <% tp.file.title %>
+title_background: 
 subtitle: 
 author: Mishamol
 author_avatar: /images/authors/mishamol_linen.png

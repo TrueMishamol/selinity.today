@@ -26,7 +26,7 @@
 
 	h3 {
 		font-size: var(--px64px);
-		
+
 		display: block;
 		text-align: center;
 
@@ -50,7 +50,7 @@
 	padding-left: var(--px32px);
 	padding-right: var(--px32px);
 
-	background-image: url('/images/header-background.png');
+	// background-image: url('/images/header-background.png');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -70,7 +70,7 @@
 
 	h3 {
 		font-size: var(--px64px);
-		
+
 		display: block;
 		text-align: center;
 
@@ -82,3 +82,44 @@
 		margin-bottom: var(--px50px);
 	}
 }
+
+
+.header {
+	position: relative;
+	/* Для абсолютного позиционирования */
+}
+
+.background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	/* Чтобы изображение заполняло весь фон */
+	background-position: center;
+	/* Чтобы изображение было по центру */
+	z-index: -1;
+	/* Чтобы фон был под текстом */
+}
+
+
+
+
+
+// .background-image {
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	width: 100%;
+// 	height: 100%;
+// 	// background-image: url('background-image.jpg'); /* URL фона */
+// 	background-blend-mode: color-burn;
+// 	// background-blend-mode: hard-light;
+// 	// filter: blur(10px);
+// 	backdrop-filter: blur(10px);
+
+// 	background-size: cover;
+// 	z-index: -1;
+//   }
+  

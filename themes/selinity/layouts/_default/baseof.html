@@ -9,9 +9,7 @@
 	<div class="body_container">
 		<div class="gap">
 
-			<header class="header">
-				{{ partial "header.html" . }}
-			</header>
+			{{ partial "header.html" . }}
 
 			<main class="gap" id="scrollTarget">
 				{{ block "main" . }}{{ end }}

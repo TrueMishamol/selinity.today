@@ -8,7 +8,7 @@
 	>pre {
 		padding: var(--px32px) var(--px64px);
 		margin: 0 var(--px64px);
-		background-color: $purple-pastel;
+		background-color: $purple_pastel;
 		color: $white;
 		border-radius: var(--px50px);
 
@@ -27,7 +27,7 @@
 
 	p>code {
 		padding: var(--px2px) var(--px16px) var(--px4px);
-		background-color: $purple-pastel;
+		background-color: $purple_pastel;
 		color: $white;
 		border-radius: var(--px50px);
 
@@ -43,10 +43,10 @@
 	}
 
 	&_paragraph {
-
 		padding: var(--px32px) var(--px100px);
 		background-color: $white;
-		color: $purple-black;
+		color: $purple_black;
+		text-align: justify;
 
 		li {
 			list-style: disc;
@@ -57,10 +57,10 @@
 		>ul {
 			padding: var(--px16px) 0;
 			background-color: $white;
-			color: $purple-black;
+			color: $purple_black;
 
 			>a {
-				color: $links-color;
+				color: $links_color;
 			}
 		}
 
@@ -69,8 +69,11 @@
 			text-align: center;
 		}
 
-		>a {
-			color: $links-color;
+		a {
+			color: $links_color;
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 
@@ -86,7 +89,20 @@
 		background-color: $white;
 
 		p {
-			color: $purple-black;
+			color: $purple_black;
+		}
+	}
+
+	&_buttons {
+		display: flex;
+		flex-direction: column;
+		gap: var(--px16px);
+
+		max-width: fit-content;
+		margin: auto;
+
+		.button {
+			font-size: var(--px50px);
 		}
 	}
 }
@@ -106,7 +122,7 @@
 	// align-items: center;
 
 	>div {
-		background-color: $purple-black;
+		background-color: $purple_black;
 		width: 100%;
 
 		margin: var(--px64px) 0;

@@ -1,0 +1,6 @@
+[markup]
+	[markup.goldmark]
+		renderer = "goldmark"
+	[markup.goldmark.renderer]
+		unsafe = true
+		hardWraps = true

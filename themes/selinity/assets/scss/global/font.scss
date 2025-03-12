@@ -7,14 +7,12 @@
 
 body {
 	font-family: 'MishamolPuffedBun2-Regular', sans-serif;
-	// font-size: var(--px16px);
-	color: $white;
-
 	font-size: var(--px32px);
+	color: $white;
 }
 
 ::selection {
-	background: $text-selection;
+	background: $text_selection;
 	color: $white;
 }
 
@@ -38,6 +36,6 @@ p {
 
 code {
 	//! Change font-family in the future
-	font-size: var(--px32px);
 	font-family: 'MishamolPuffedBun2-Regular', sans-serif;
+	font-size: var(--px32px);
 }

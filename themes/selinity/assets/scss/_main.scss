@@ -1,17 +1,21 @@
-@import "adaptive_pixel_units.scss";
-@import "colors.scss";
+/// Global
+@import "global/adaptive_pixel_units.scss";
+@import "global/colors.scss";
 
-@import "zeroing.scss";
-@import "body.scss";
-@import "font.scss";
-@import "scrollbar.scss";
+@import "global/zeroing.scss";
+@import "global/body.scss";
+@import "global/font.scss";
+@import "global/scrollbar.scss";
 
-@import "author.scss";
-@import "header.scss";
+/// Other Elements
 @import "markdown.scss";
-@import "footer.scss";
 
 @import "button.scss";
-@import "navbar.scss";
 @import "content.scss";
 @import "marquee.scss";
+
+/// Partials
+@import "partials/author.scss";
+@import "partials/header.scss";
+@import "partials/footer.scss";
+@import "partials/navbar.scss";

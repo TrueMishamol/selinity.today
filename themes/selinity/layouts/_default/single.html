@@ -3,17 +3,15 @@
 
 
 
+{{ if not .Params.no_author }}
+{{ partial "author.html" . }}
+{{ end }}
 
 <div class="markdown">
-
-	{{ if not .Params.no_author }}
-		{{ partial "author.html" . }}
-	{{ end }}
 
 	{{ .Content }}
 
 </div>
-
 
 
 

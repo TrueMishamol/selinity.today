@@ -22,6 +22,30 @@
     });
   }
   document.addEventListener("DOMContentLoaded", moveImagesAndRemoveEmptyParagraphs);
+  function transformParagraphsWithLinks() {
+    const markdownDivs = document.querySelectorAll(".markdown");
+    markdownDivs.forEach((markdownDiv) => {
+      if (!markdownDiv) return;
+      const paragraphs = markdownDiv.querySelectorAll("p");
+      paragraphs.forEach((paragraph) => {
+        const links = paragraph.querySelectorAll("a");
+        if (links.length === 0) return;
+        const nonLinkNodes = Array.from(paragraph.childNodes).filter((node) => {
+          return node.nodeType === Node.ELEMENT_NODE ? node.tagName !== "A" : node.textContent.trim() !== "";
+        });
+        if (nonLinkNodes.length > 0) return;
+        const div = document.createElement("div");
+        div.classList.add("markdown_buttons");
+        links.forEach((link) => {
+          const clone = link.cloneNode(true);
+          clone.classList.add("button");
+          div.appendChild(clone);
+        });
+        paragraph.replaceWith(div);
+      });
+    });
+  }
+  document.addEventListener("DOMContentLoaded", transformParagraphsWithLinks);
   function groupMarkdownElements() {
     const markdownDivs = document.querySelectorAll(".markdown");
     markdownDivs.forEach((markdownDiv) => {

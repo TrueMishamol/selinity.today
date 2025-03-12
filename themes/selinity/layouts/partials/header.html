@@ -1,7 +1,25 @@
-<h1>{{ .Title }}</h1>
+<!-- <header class="header" {{ if .Params.title_background }} style="background-image: url('{{ .Params.title_background }}')" {{ end }}>
+	<h1>{{ .Title }}</h1>
 
-{{ if .Params.Subtitle }}
-  <h3>{{ .Params.Subtitle }}</h3>
-{{ end }}
+	{{ if .Params.Subtitle }}
+	<h3>{{ .Params.Subtitle }}</h3>
+	{{ end }}
+</header> -->
 
-<!-- <a class="button" id="scrollButton">Читать</a> -->
+
+<header class="header">
+	{{ if .Params.title_background }}
+	<!-- <div class="background-image" style="background-image: url('{{ .Params.title_background }}'), url('/images/header-overlay-hard-light.png')"></div>
+	<div class="background-image" style="background-image: url('/images/header-overlay-normal.png')"></div> -->
+	<div class="background-image" style="background-image: url('{{ .Params.title_background }}')"></div>
+	{{ else }}
+	<div class="background-image" style="background-image: url('/images/header-background.png')"></div>
+	{{ end }}
+
+	<h1>{{ .Title }}</h1>
+
+	{{ if .Params.Subtitle }}
+	<h3>{{ .Params.Subtitle }}</h3>
+	{{ end }}
+</header>
+

@@ -1,0 +1,24 @@
+::-webkit-scrollbar {
+	transition: transform 0.3s ease-in-out;
+	width: var(--px8px); /// Scrollbar width
+}
+
+::-webkit-scrollbar-track {
+	background: #ffffff00; /// Track background color
+}
+
+::-webkit-scrollbar-thumb {
+	background: $white; /// Thumb color
+	border-radius: var(--px4px); /// Thumb corner rounding
+	border: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: $purple_pastel; /// Thumb color on hover
+}
+
+/// Firefox
+body {
+	scrollbar-width: thin; /// auto | thin | none
+	scrollbar-color: $white $purple_pastel; /// Thumb and track color
+}

@@ -4,13 +4,18 @@
 		<img src="{{ .Params.author_avatar }}">
 	</div>
 
-	<div class="author_text">
+	<!-- <div class="author_text">
 		<h4>Автор</h4>
 		<p>{{ .Params.author }}</p>
 	</div>
 
 	<div class="author_text">
 		<h4>Дата</h4>
+		<p>{{ .Date.Format "2006-01-02" }}</p>
+	</div> -->
+
+	<div class="author_text">
+		<h4>{{ .Params.author }}</h4>
 		<p>{{ .Date.Format "2006-01-02" }}</p>
 	</div>
 </div>
