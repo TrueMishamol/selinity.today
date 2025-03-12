@@ -1,0 +1,17 @@
+desktop.ini
+!/desktop.ini
+.directory
+
+*.jpg~
+*.png~
+*.kra~
+*.DS_Store
+
+_TEC
+
+_materials
+
+# HUGO
+resources
+.hugo_build.lock
+
